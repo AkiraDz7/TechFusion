@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: 'Kavoon';
+    src: url("../fonts/Kavoon/Kavoon-Regular.ttf") format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+body{
+    background-color: #d6d6d6;
+    font-family: 'Kavoon', sans-serif;
+}
+
+/*-------header-------*/
+
+header{
+    width: 90%;
+    margin: 3% 5%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav li ul{
+    display: none;
+}
+
+header nav ul li a:hover{
+    color: #187bec;
+}
+
+header nav ul li input{
+    padding: 5px;
+    border-radius: 10px;
+    
+     
+}
+header nav ul li i{
+    position: absolute;
+    top: 45px;  
+    right: 355px;
+}
+
+#bottom{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.0em;
+
+}
+
+body form br{
+padding: 20px;
+
+}
