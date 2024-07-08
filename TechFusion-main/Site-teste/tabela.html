@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            list-style: none;
+            padding: 10px;
+            top: 30px;
+            left: 0;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+        }
+
+        nav ul li ul li a {
+            color: white;
+        }
+
+        nav ul li input {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer .fa-brands {
+            margin: 0 10px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Produtos</a>
+                    <ul>
+                        <li><a href="suporte.html">Suporte</a></li>
+                        <li><a href="codigo_aberto.html">Código Aberto</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="tabela.html">Código Aberto</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><input type="text" placeholder="Buscar"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a id="bottom" href="cadastra.html">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de Criação</th>
+                    <th>ID</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Miguel</td>
+                    <td>08/06/2023</td>
+                    <td>5656465525</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td>15/07/2023</td>
+                    <td>3423423423</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>22/08/2023</td>
+                    <td>7897897897</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>30/09/2023</td>
+                    <td>1231231231</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Redes Sociais</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <p>Produzido pela Turma de Cuiabá 2023/2024 todos os direitos reservados pela ICET.</p>
+    </footer>
+
+</body>
+</html>

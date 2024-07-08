@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFusion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #262626;
+            font-weight: 500;
+        }
+
+        nav ul li input {
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            padding: 5px 10px;
+        }
+
+        nav ul li .fa-magnifying-glass {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #8e8e8e;
+        }
+
+        .stories {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            overflow-x: scroll;
+            margin: 60px auto 0 auto;
+            max-width: 1000px;
+        }
+
+        .story {
+            border-radius: 50%;
+            border: 2px solid #dbdbdb;
+            padding: 5px;
+            margin-right: 10px;
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+        }
+
+        .story img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .post {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .post-header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .post-content img {
+            width: 100%;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
+
+        .post-content p {
+            margin: 5px 0;
+        }
+
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .post-actions .fa-heart,
+        .post-actions .fa-comment {
+            margin-right: 10px;
+            cursor: pointer;
+            color: #8e8e8e;
+        }
+
+        footer {
+            background-color: #fff;
+            border-top: 1px solid #dbdbdb;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #8e8e8e;
+        }
+
+        footer .fa-brands {
+            margin: 0 10px;
+            color: #8e8e8e;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><i class="fa-brands fa-fantasy-flight-games"></i><img src="" alt="TechFusion" height="30"></a>
+            </div>
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="tabela.html">Código Aberto</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li>
+                    <input type="text" placeholder="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastra.html" id="bottom">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="stories">
+        <div class="story">
+            <img src="story1.jpg" alt="Story 1">
+        </div>
+        <div class="story">
+            <img src="story2.jpg" alt="Story 2">
+        </div>
+        <div class="story">
+            <img src="story3.jpg" alt="Story 3">
+        </div>
+        <div class="story">
+            <img src="story4.jpg" alt="Story 4">
+        </div>
+    </div>
+
+    <section>
+        <h2>Novos Repositórios</h2>
+        
+        <div class="post">
+            <div class="post-header">
+                <img src="user1.jpg" alt="Laura Alcântara Nunes">
+                <div>
+                    <span>Laura Alcântara Nunes</span>
+                    <p>B++</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Game com JavaScript</p>
+                <img src="game1.jpg" alt="Game com JavaScript">
+                <p>Este projeto é um jogo desenvolvido com JavaScript que demonstra habilidades avançadas em programação, proporcionando uma experiência interativa.</p>
+            </div>
+            <div class="post-actions">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-comment"></i>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <img src="user2.jpg" alt="Laura Alcântara Nunes">
+                <div>
+                    <span>Laura Alcântara Nunes</span>
+                    <p>B++</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Game com JavaScript</p>
+                <img src="game2.jpg" alt="Game com JavaScript">
+                <p>Este projeto é um jogo desenvolvido com JavaScript que demonstra habilidades avançadas em programação, proporcionando uma experiência interativa.</p>
+            </div>
+            <div class="post-actions">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-comment"></i>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <img src="user3.jpg" alt="Laura Alcântara Nunes">
+                <div>
+                    <span>Laura Alcântara Nunes</span>
+                    <p>B++</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Game com JavaScript</p>
+                <img src="game3.jpg" alt="Game com JavaScript">
+                <p>Este projeto é um jogo desenvolvido com JavaScript que demonstra habilidades avançadas em programação, proporcionando uma experiência interativa.</p>
+            </div>
+            <div class="post-actions">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-comment"></i>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <img src="user4.jpg" alt="Laura Alcântara Nunes">
+                <div>
+                    <span>Laura Alcântara Nunes</span>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Game</p>
+                <img src="game4.jpg" alt="Game">
+                <p>Este projeto é um jogo desenvolvido com JavaScript que demonstra habilidades avançadas em programação, proporcionando uma experiência interativa.</p>
+            </div>
+            <div class="post-actions">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-comment"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Redes Sociais</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <p>Políticas</p>
+        <p>Termos</p>
+        <p>Privacidade</p>
+        <p>Cookies</p>
+        <p>Empresa</p>
+        <p>Sobre</p>
+        <p>Empregos</p>
+        <p>Marca</p>
+        <p>Sala de Empresa</p>
+        <p>Recursos</p>
+        <p>Suporte</p>
+        <p>Segurança</p>
+        <p>Blog</p>
+        <p>Comunidade</p>
+        <p>Aplicativo</p>
+        <p>Baixe Android</p>
+        <p>Baixe iOS</p>
+        <p>Produzido pela Turma de Cuiabá 2023/2024 todos os direitos reservados pela ICET.</p>
+    </footer>
+</body>
+
+</html>
