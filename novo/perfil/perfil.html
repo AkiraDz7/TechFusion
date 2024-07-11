@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Instagram</div>
+            <input type="text" placeholder="Buscar">
+            <div class="nav-icons">
+                <a href="../inicio.html"><img src="icons/home.png" alt="Início"></a>
+                <a href="../mensagem/menssages.html"><img src="icons/message.png" alt="Mensagens"></a>
+                <a href="explore.html"><img src="icons/compass.png" alt="Explorar"></a>
+                <a href="notifications.html"><img src="icons/heart.png" alt="Notificações"></a>
+                <a href="perfil.html"><img src="icons/profile.png" alt="Perfil"></a>
+                <button id="toggle-dark-mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+    <main class="profile-container">
+        <section class="profile-header">
+            <img src="icons/profile.png" alt="Foto de Perfil" class="profile-pic">
+            <div class="profile-info">
+                <h2 class="profile-username">Nome do Usuário</h2>
+                <div class="profile-stats">
+                    <span><strong>100</strong> publicações</span>
+                    <span><strong>200</strong> seguidores</span>
+                    <span><strong>180</strong> seguindo</span>
+                </div>
+                <button class="profile-edit-button">Editar Perfil</button>
+            </div>
+        </section>
+        <section class="profile-posts">
+            <div class="post-thumbnail">
+                <img src="images/post1.jpg" alt="Postagem">
+            </div>
+            <div class="post-thumbnail">
+                <img src="images/post2.jpg" alt="Postagem">
+            </div>
+            <div class="post-thumbnail">
+                <img src="images/post3.jpg" alt="Postagem">
+            </div>
+            <!-- Adicione mais miniaturas de postagens conforme necessário -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

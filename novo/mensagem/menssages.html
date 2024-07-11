@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Instagram</div>
+            <input type="text" placeholder="Buscar">
+            <div class="nav-icons">
+                <a href="../inicio.html"><img src="icons/home.png" alt="Início"></a>
+                <a href="messages.html"><img src="icons/message.png" alt="Mensagens"></a>
+                <a href="explore.html"><img src="icons/compass.png" alt="Explorar"></a>
+                <a href="notifications.html"><img src="icons/heart.png" alt="Notificações"></a>
+                <a href="../perfil/perfil.html"><img src="icons/profile.png" alt="Perfil"></a>
+                <button id="toggle-dark-mode">🌙</button>
+            </div>
+        </nav>
+    </header>
+    <main class="messages-container">
+        <aside class="contacts">
+            <div class="contact">
+                <img src="icons/profile.png" alt="Perfil" class="contact-pic">
+                <span class="contact-name">Contato 1</span>
+            </div>
+            <div class="contact">
+                <img src="icons/profile.png" alt="Perfil" class="contact-pic">
+                <span class="contact-name">Contato 2</span>
+            </div>
+            <div class="contact">
+                <img src="icons/profile.png" alt="Perfil" class="contact-pic">
+                <span class="contact-name">Contato 3</span>
+            </div>
+        </aside>
+        <section class="chat">
+            <div class="chat-header">
+                <img src="icons/profile.png" alt="Perfil" class="chat-pic">
+                <span class="chat-name">Nome do Contato</span>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">
+                    <p>Olá! Como você está?</p>
+                </div>
+                <div class="message sent">
+                    <p>Estou bem, obrigado! E você?</p>
+                </div>
+                <div class="message received">
+                    <p>Também estou bem!</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Escreva uma mensagem...">
+                <button>Enviar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
